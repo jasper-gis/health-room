@@ -1,0 +1,9 @@
+{
+  "id": "kidney",
+  "title": "肾脏与排尿",
+  "status": "pending",
+  "priority_note": "待美年报告填入",
+  "history": [],
+  "latest_known": [],
+  "related_lab_ids": ["lab_example_uacr"]
+}

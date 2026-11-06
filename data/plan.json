@@ -1,0 +1,16 @@
+[
+  {
+    "id": "example_collect_report",
+    "title": "整理原始报告（示例）",
+    "detail": "收到美年报告后，将 PDF 或完整截图放入 raw/，再明确发出导入指令。",
+    "status": "待安排",
+    "actions": ["查看资料依据"]
+  },
+  {
+    "id": "example_review_records",
+    "title": "核对导入资料（示例）",
+    "detail": "导入完成后，对照原始报告核对指标名称、单位、日期与来源文件。",
+    "status": "待安排",
+    "actions": ["查看检查与指标"]
+  }
+]

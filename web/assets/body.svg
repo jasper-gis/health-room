@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 600" fill="none" role="img" aria-labelledby="body-title body-description">
+  <title id="body-title">通用人体示意</title>
+  <desc id="body-description">半透明正面人体和器官示意，仅用于健康资料导航，并非个人医学影像。</desc>
+  <defs>
+    <linearGradient id="skin" x1="83" y1="250" x2="240" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eee2d9" stop-opacity=".2"/>
+      <stop offset=".19" stop-color="#fff4e9" stop-opacity=".54"/>
+      <stop offset=".43" stop-color="#ead1c4" stop-opacity=".38"/>
+      <stop offset=".62" stop-color="#f3dfd0" stop-opacity=".48"/>
+      <stop offset=".84" stop-color="#fff4e7" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#ead5ca" stop-opacity=".2"/>
+    </linearGradient>
+    <radialGradient id="face" cx=".38" cy=".34" r=".7">
+      <stop stop-color="#f6e5d8" stop-opacity=".78"/>
+      <stop offset=".66" stop-color="#ddc0b4" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#fff1e5" stop-opacity=".64"/>
+    </radialGradient>
+    <radialGradient id="chest" cx=".48" cy=".42" r=".54">
+      <stop stop-color="#edc4ae" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#ecc3b3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="organ" x1="116" y1="151" x2="193" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7c5af" stop-opacity=".86"/>
+      <stop offset=".48" stop-color="#d9917d" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#e4b4a0" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="167" y1="173" x2="189" y2="217" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#efb59f" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#c77c6e" stop-opacity=".72"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="159" y1="114" x2="159" y2="349" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff5e8" stop-opacity=".6"/>
+      <stop offset=".7" stop-color="#fff4e8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff4e8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-.3" y="-.1" width="1.6" height="1.2" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3.8"/>
+    </filter>
+    <filter id="organ-soft" x="-.2" y="-.2" width="1.4" height="1.4" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".75"/>
+    </filter>
+    <filter id="ground-soft" x="-.5" y="-1" width="2" height="3">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <path id="outline" d="M160 12C144 12 134 22 133 37C132 45 134 52 135 58C136 72 141 81 148 85L147 96C142 104 130 107 118 112C104 116 97 123 93 137C90 149 90 163 86 179L73 226C69 242 63 263 60 280L56 298C52 304 49 309 47 315L42 330C41 334 44 335 46 332L51 322L48 343C47 348 51 349 52 345L56 327L53 350C53 354 57 354 58 350L61 330L59 350C59 354 63 354 64 350L66 331L66 345C66 349 69 349 70 345L73 325C73 320 72 315 70 310L73 293C78 274 87 258 94 238C100 221 106 200 110 180L115 166C116 187 115 205 119 222C121 234 119 250 114 269C109 285 107 304 109 323C110 341 114 357 117 374C120 394 120 412 119 431C116 447 114 461 116 477C118 494 122 514 123 536L122 552C120 560 115 565 108 569C103 572 100 576 102 580C108 583 118 582 127 581C135 581 140 578 141 572L140 555C140 536 144 513 147 491C150 474 149 459 147 445L149 416C151 396 155 379 157 362C158 359 162 359 163 362C165 379 169 396 171 416L173 445C171 459 170 474 173 491C176 513 180 536 180 555L179 572C180 578 185 581 193 581C202 582 212 583 218 580C220 576 217 572 212 569C205 565 200 560 198 552L197 536C198 514 202 494 204 477C206 461 204 447 201 431C200 412 200 394 203 374C206 357 210 341 211 323C213 304 211 285 206 269C201 250 199 234 201 222C205 205 204 187 205 166L210 180C214 200 220 221 226 238C233 258 242 274 247 293L250 310C248 315 247 320 247 325L250 345C251 349 254 349 254 345L254 331L256 350C257 354 261 354 261 350L259 330L262 350C263 354 267 354 267 350L264 327L268 345C269 349 273 348 272 343L269 322L274 332C276 335 279 334 278 330L273 315C271 309 268 304 264 298L260 280C257 263 251 242 247 226L234 179C230 163 230 149 227 137C223 123 216 116 202 112C190 107 178 104 173 96L172 85C179 81 184 72 185 58C186 52 188 45 187 37C186 22 176 12 160 12Z"/>
+    <clipPath id="body-clip"><use href="#outline"/></clipPath>
+  </defs>
+
+  <ellipse cx="160" cy="582" rx="65" ry="5" fill="#82706a" opacity=".11" filter="url(#ground-soft)"/>
+  <use href="#outline" fill="url(#skin)" stroke="#fff5ec" stroke-opacity=".62" stroke-width="1.4"/>
+
+  <g clip-path="url(#body-clip)">
+    <path d="M160 12C143 12 134 24 134 40C134 52 137 70 145 79C150 85 155 87 160 87C165 87 170 85 175 79C183 70 186 52 186 40C186 24 177 12 160 12Z" fill="url(#face)"/>
+    <ellipse cx="159" cy="203" rx="66" ry="115" fill="url(#chest)"/>
+
+    <!-- Broad, translucent highlights provide volume without outlining muscles. -->
+    <g filter="url(#soft)">
+      <path d="M141 29C136 45 139 65 147 75" stroke="#fff6e9" stroke-width="4" opacity=".48"/>
+      <path d="M177 28C181 44 178 63 171 74" stroke="#b9978c" stroke-width="5" opacity=".16"/>
+      <path d="M145 94C139 111 117 113 106 129C100 142 102 160 96 183L84 224C76 246 70 266 67 290" stroke="#fff7e9" stroke-width="7" opacity=".42"/>
+      <path d="M177 96C181 111 204 113 215 131C222 148 216 169 225 190L239 240C245 257 250 276 253 291" stroke="#fff7e9" stroke-width="6" opacity=".46"/>
+      <path d="M107 141C111 159 105 182 102 196M213 141C209 159 215 182 218 196" stroke="#b49487" stroke-width="7" opacity=".18"/>
+      <path d="M122 217C130 237 122 263 120 282C115 302 117 326 123 348" stroke="#fff4e4" stroke-width="9" opacity=".4"/>
+      <path d="M198 219C189 240 199 263 200 284C205 303 203 326 197 348" stroke="#fff4e4" stroke-width="8" opacity=".4"/>
+      <path d="M128 351C133 377 130 410 129 431C125 450 122 468 127 489C131 511 132 537 131 556" stroke="#fff5e5" stroke-width="10" opacity=".43"/>
+      <path d="M192 351C187 377 190 410 191 431C195 450 198 468 193 489C189 511 188 537 189 556" stroke="#fff5e5" stroke-width="10" opacity=".43"/>
+      <path d="M146 355C141 386 144 414 139 439C137 456 140 474 137 495M174 355C179 386 176 414 181 439C183 456 180 474 183 495" stroke="#a7857d" stroke-width="7" opacity=".16"/>
+      <path d="M139 311C137 330 148 348 157 352M181 311C183 330 172 348 163 352" stroke="#ae8a7c" stroke-width="7" opacity=".12"/>
+    </g>
+
+    <!-- A restrained skeletal scaffold sits behind the organs. -->
+    <path d="M160 114L160 331" stroke="url(#spine)" stroke-width="5"/>
+    <g stroke="#fff4e8" stroke-width="1.4" stroke-linecap="round" opacity=".3">
+      <path d="M157 133C148 125 128 122 113 132M163 133C172 125 192 122 207 132"/>
+      <path d="M158 149C146 141 126 139 115 149M162 149C174 141 194 139 205 149"/>
+      <path d="M158 164C144 155 124 154 114 165M162 164C176 155 196 154 206 165"/>
+      <path d="M158 179C144 171 126 168 115 180M162 179C176 171 194 168 205 180"/>
+      <path d="M158 195C142 190 129 184 118 195M162 195C178 190 191 184 202 195"/>
+      <path d="M157 211C143 208 131 203 122 211M163 211C177 208 189 203 198 211"/>
+      <path d="M154 223C143 225 132 220 126 218M166 223C177 225 188 220 194 218"/>
+      <path d="M126 309C135 310 148 319 153 335M194 309C185 310 172 319 167 335"/>
+      <path d="M130 439C133 441 138 441 140 439M180 439C182 441 187 441 190 439"/>
+    </g>
+
+    <!-- Organ forms are a general illustration, never patient-specific imaging. -->
+    <g filter="url(#organ-soft)">
+      <path d="M155 109C151 103 147 106 148 112C147 118 149 122 153 122L159 117L161 117L167 122C171 122 173 118 172 112C173 106 169 103 165 109L163 112L157 112Z" fill="#d89984" opacity=".66"/>
+      <path d="M156 124L156 153M164 124L164 153" stroke="#ead0bd" stroke-width="3" opacity=".72"/>
+      <path d="M148 143C142 138 135 141 129 149C119 161 114 179 114 195C114 211 121 218 132 214C141 212 150 206 152 196L151 164C151 157 152 149 148 143Z" fill="url(#organ)" stroke="#f5dac5" stroke-opacity=".56" stroke-width=".9"/>
+      <path d="M172 143C178 138 185 141 191 149C201 161 206 180 206 195C206 211 198 218 188 214C179 212 170 206 168 196L169 164C169 157 168 149 172 143Z" fill="url(#organ)" stroke="#f5dac5" stroke-opacity=".56" stroke-width=".9"/>
+      <path d="M160 143L160 160L141 175M160 160L179 175" stroke="#f9dfca" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+      <g stroke="#f4d4bc" stroke-linecap="round" stroke-width="1.1" opacity=".57">
+        <path d="M141 174L134 158M141 174L124 184M141 174L139 198M134 158L126 168M139 198L126 204"/>
+        <path d="M179 174L186 158M179 174L196 184M179 174L181 198M186 158L194 169M181 198L194 204"/>
+      </g>
+      <path d="M169 177C176 168 187 173 192 183C198 195 191 208 178 218C165 211 157 202 158 192C159 184 162 180 169 177Z" fill="url(#heart)" stroke="#f6d5bf" stroke-width=".8" stroke-opacity=".7"/>
+      <path d="M175 181L174 172C173 166 164 166 163 174L163 179M182 179L183 169" stroke="#d69a84" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+      <path d="M177 188C174 196 177 206 181 211M177 194L167 196M177 202L187 201" stroke="#f5c7ae" stroke-width="1" opacity=".6"/>
+      <path d="M122 228C133 222 150 223 164 228C175 232 183 232 193 231C191 239 181 245 168 248C152 250 136 259 122 256C117 252 116 239 122 228Z" fill="url(#organ)" stroke="#f0d2ba" stroke-width=".8" stroke-opacity=".5"/>
+      <path d="M162 229C160 237 159 244 158 250" stroke="#f3d0b8" stroke-width=".8" opacity=".5"/>
+      <path d="M143 247C146 246 148 250 148 253C148 258 145 263 142 261C138 258 140 250 143 247Z" fill="#beb894" opacity=".5"/>
+      <path d="M138 271C128 269 123 278 124 288C125 298 131 302 137 298C141 295 140 291 136 288C133 286 134 282 138 280C142 278 142 273 138 271Z" fill="url(#organ)" stroke="#f1cfb8" stroke-width=".9" stroke-opacity=".6"/>
+      <path d="M182 271C192 269 197 278 196 288C195 298 189 302 183 298C179 295 180 291 184 288C187 286 186 282 182 280C178 278 178 273 182 271Z" fill="url(#organ)" stroke="#f1cfb8" stroke-width=".9" stroke-opacity=".6"/>
+      <path d="M138 287C148 299 145 313 153 329M182 287C172 299 175 313 167 329" stroke="#edd2ba" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+    </g>
+
+    <g stroke="#fff1e0" stroke-linecap="round" opacity=".23">
+      <path d="M145 90C146 104 154 108 155 126M175 90C174 104 166 108 165 126" stroke-width="1.5"/>
+      <path d="M158 260C157 278 156 294 158 302M162 260C163 278 164 294 162 302"/>
+      <path d="M127 361C132 381 132 406 129 425M193 361C188 381 188 406 191 425" stroke-width="1.2"/>
+      <path d="M128 461C127 484 132 510 132 531M192 461C193 484 188 510 188 531" stroke-width="1.1"/>
+      <path d="M122 563L118 573M128 565L126 576M198 563L202 573M192 565L194 576"/>
+    </g>
+  </g>
+</svg>

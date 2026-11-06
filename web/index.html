@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#c8c0c0">
+  <title>个人健康室 · 蒋元甲</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳到主要内容</a>
+  <div class="health-room">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="个人健康室首页">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#heart"></use></svg></span>
+        <span><strong>个人健康室</strong><small>JASPER'S HEALTH ROOM</small></span>
+      </a>
+      <nav class="tabs" role="tablist" aria-label="健康室页面">
+        <button id="tab-body" class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="body-panel" data-tab="body"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#home"></use></svg>身体关注</button>
+        <button id="tab-sources" class="tab" type="button" role="tab" aria-selected="false" aria-controls="sources-panel" tabindex="-1" data-tab="sources"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#file"></use></svg>资料依据</button>
+        <button id="tab-labs" class="tab" type="button" role="tab" aria-selected="false" aria-controls="labs-panel" tabindex="-1" data-tab="labs"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#flask"></use></svg>检查与指标</button>
+        <button id="tab-meds" class="tab" type="button" role="tab" aria-selected="false" aria-controls="meds-panel" tabindex="-1" data-tab="meds"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#pill"></use></svg>用药</button>
+        <button id="tab-plan" class="tab" type="button" role="tab" aria-selected="false" aria-controls="plan-panel" tabindex="-1" data-tab="plan"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"></use></svg>近期安排</button>
+        <button id="tab-ai" class="tab" type="button" role="tab" aria-selected="false" aria-controls="ai-panel" tabindex="-1" data-tab="ai"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#sparkles"></use></svg>AI 分析</button>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-button quiet-button" type="button" data-info="notifications" aria-label="通知说明"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#bell"></use></svg></button>
+        <button class="icon-button add-button" type="button" data-info="import" aria-label="查看报告导入说明"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#plus"></use></svg></button>
+        <button class="icon-button quiet-button" type="button" data-info="settings" aria-label="本地资料设置说明"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#settings"></use></svg></button>
+      </div>
+    </header>
+
+    <div id="load-notice" class="load-notice" role="status">正在读取本地资料…</div>
+    <noscript><div class="load-notice is-error">请启用 JavaScript 以读取本地资料、切换页面和查看人体热点。</div></noscript>
+
+    <main id="workspace" class="workspace" tabindex="-1">
+      <aside class="profile-column" aria-label="本人资料">
+        <section class="glass-card identity-card">
+          <div class="identity-top">
+            <div class="avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 88"><path fill="#d9d0c7" d="M0 0h80v88H0z"/><path fill="#444448" d="M8 88c0-22 13-31 32-31s32 9 32 31"/><path fill="#cfad91" d="M32 49h16v17c-4 6-12 6-16 0z"/><ellipse cx="40" cy="34" rx="18" ry="23" fill="#e4c4a7"/><path fill="#424040" d="M22 35c-7-28 14-31 24-27 14 0 16 15 11 29l-5-15c-11 7-17 0-23 1z"/><path fill="none" stroke="#665448" stroke-width="2" stroke-linecap="round" d="M30 34h5m10 0h5m-14 15q4 3 8 0"/><path fill="#e7e1d9" d="M26 61l14 11-9 10-9-16m32-5L40 72l9 10 9-16"/></svg>
+            </div>
+            <div><h1 id="profile-name">蒋元甲</h1><p class="identity-relation"><span class="tiny-dot"></span><span id="profile-relation">本人</span><span class="identity-en">Jasper</span></p></div>
+          </div>
+          <dl class="vital-grid">
+            <div><dd id="profile-age">—</dd><dt>年龄</dt></div>
+            <div><dd id="profile-height">—</dd><dt>身高</dt></div>
+            <div><dd id="profile-weight">—</dd><dt>体重</dt></div>
+          </dl>
+          <div class="identity-meta"><span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#pin"></use></svg><span id="profile-location">—</span></span><span id="profile-birthday">生日待填入</span></div>
+          <div class="report-status"><span class="status-dot"></span><span id="profile-status">正在读取本地资料</span></div>
+        </section>
+
+        <section class="glass-card key-labs-card">
+          <div class="card-heading"><h2>关键指标</h2><span>最近一次报告</span></div>
+          <div id="key-labs" class="key-labs"><p class="muted">正在读取指标…</p></div>
+          <button class="text-link card-bottom-link" type="button" data-open-tab="labs">全部检查与指标<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow"></use></svg></button>
+        </section>
+
+        <section class="glass-card lifestyle-card">
+          <div class="card-heading"><h2>生活与过敏</h2><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#body"></use></svg></div>
+          <dl class="lifestyle-list" id="lifestyle-list"><div><dt>工作</dt><dd>—</dd></div><div><dt>吸烟</dt><dd>—</dd></div><div><dt>睡眠</dt><dd>—</dd></div><div><dt>过敏</dt><dd>—</dd></div></dl>
+          <div class="lifestyle-foot"><span>资料与目标</span><button class="text-link" type="button" data-open-tab="plan">查看近期安排<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow"></use></svg></button></div>
+        </section>
+        <p class="local-note"><span class="tiny-dot"></span>个人资料 · 本地只读</p>
+      </aside>
+
+      <section id="body-panel" class="body-column" role="tabpanel" aria-labelledby="tab-body">
+        <div class="section-heading"><span>全身总览</span><span class="muted">7 个系统</span></div>
+        <div class="body-stage">
+          <div class="body-aura" aria-hidden="true"></div>
+          <div class="body-figure" id="body-figure"><img class="body-image" src="assets/body.svg" alt="半透明人体示意，非个人检查影像"><div id="body-hotspots"></div></div>
+          <span class="body-axis body-axis-left" aria-hidden="true">L</span><span class="body-axis body-axis-right" aria-hidden="true">R</span>
+        </div>
+        <div class="system-shortcuts" id="system-shortcuts"></div>
+        <p class="figure-caption">人体示意 · 非个人检查影像</p>
+      </section>
+
+      <section id="systems-panel" class="systems-column" aria-label="分系统资料">
+        <div class="systems-heading"><span class="section-pill">当前关注</span><span class="muted">分系统整理</span><span class="system-count">07</span></div>
+        <div id="system-cards" class="system-cards"><div class="glass-card loading-card">正在读取系统资料…</div></div>
+        <div class="systems-foot"><span class="tiny-dot"></span><span class="systems-scroll-hint">向下滚动查看全部 7 个系统</span><span class="systems-expanded-hint">7 个系统 · 待美年报告填入</span></div>
+      </section>
+
+      <section id="sources-panel" class="detail-page" role="tabpanel" aria-labelledby="tab-sources" hidden></section>
+      <section id="labs-panel" class="detail-page" role="tabpanel" aria-labelledby="tab-labs" hidden></section>
+      <section id="meds-panel" class="detail-page" role="tabpanel" aria-labelledby="tab-meds" hidden></section>
+      <section id="plan-panel" class="detail-page" role="tabpanel" aria-labelledby="tab-plan" hidden></section>
+      <section id="ai-panel" class="detail-page ai-page" role="tabpanel" aria-labelledby="tab-ai" hidden></section>
+      <svg id="connector" class="connector" aria-hidden="true"><path id="connector-path" d=""></path><circle id="connector-dot" r="3"></circle></svg>
+    </main>
+
+    <footer class="timeline-bar" aria-label="资料时间轴">
+      <div class="timeline-label"><span class="focus-label"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#heart"></use></svg>当前关注</span><span class="timeline-name">资料时间轴</span></div>
+      <div class="timeline-years" role="group" aria-label="选择年份（占位，暂不筛选资料）"><button type="button" data-year="2023" aria-pressed="false">2023</button><button type="button" data-year="2024" aria-pressed="false">2024</button><button type="button" data-year="2025" aria-pressed="false">2025</button><button class="is-active" type="button" data-year="2026" aria-pressed="true">2026</button></div>
+      <span id="timeline-hint" class="timeline-hint">2026 · 占位，暂不筛选</span>
+    </footer>
+  </div>
+  <div id="live-status" class="sr-only" aria-live="polite"></div>
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="dialog-title"><button class="icon-button dialog-close" type="button" aria-label="关闭弹层"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#close"></use></svg></button><div id="dialog-content"></div><form method="dialog"><button class="primary-button" type="submit">知道了<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#check"></use></svg></button></form></dialog>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "id": "cardiovascular",
+  "title": "心血管",
+  "status": "pending",
+  "priority_note": "待美年报告填入",
+  "history": [],
+  "latest_known": [],
+  "related_lab_ids": ["lab_example_ldl"]
+}

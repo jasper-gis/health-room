@@ -1,0 +1,29 @@
+{
+  "updated_at": "",
+  "items": [
+    {
+      "id": "lab_example_ldl",
+      "name": "LDL-C",
+      "name_zh": "低密度脂蛋白胆固醇",
+      "value": null,
+      "unit": "mmol/L",
+      "ref_range": "",
+      "date": "",
+      "source": "",
+      "system_id": "cardiovascular",
+      "flag": "pending"
+    },
+    {
+      "id": "lab_example_uacr",
+      "name": "UACR",
+      "name_zh": "尿白蛋白/肌酐比值",
+      "value": null,
+      "unit": "",
+      "ref_range": "",
+      "date": "",
+      "source": "",
+      "system_id": "kidney",
+      "flag": "pending"
+    }
+  ]
+}

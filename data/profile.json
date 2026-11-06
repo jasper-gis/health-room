@@ -1,0 +1,22 @@
+{
+  "display_name": "蒋元甲",
+  "relation_label": "本人",
+  "sex": "男",
+  "birth_date": "",
+  "age": null,
+  "height_cm": null,
+  "weight_kg": null,
+  "location": "北京",
+  "avatar": "",
+  "checkup_org": "美年大健康",
+  "checkup_package": "综合套餐",
+  "checkup_date": "2026-11-04",
+  "key_labs_preview": [],
+  "lifestyle": {
+    "work": "",
+    "smoking": "",
+    "sleep": "",
+    "allergies": "暂无"
+  },
+  "status": "pending_report"
+}
